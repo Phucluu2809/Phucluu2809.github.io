@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+}
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+.backgroundblack{
+    background-color:black;
+}
+.backgroundpurple{
+    background-color: purple;
+}
+.fontfamily{
+    font-family: sans-serif;
+}
+#h1dau,h1thu9{               //lấy nhiều
+    font-family: sans-serif;
+}
+// vừa class,vừa id viết liền, nhiều thằng lấy phẩy
+// #h1dau#h1chin.backgroundblack            lấy hết
+
+// auto=> tự điều chỉnh
+// left+right=inline             top+bottom=block
+// max-width: 1280px;
+// margin-inline:24px;
+// font-family: "Mon...","si..."
+// width
+:80%;

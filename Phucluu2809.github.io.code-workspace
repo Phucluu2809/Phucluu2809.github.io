@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../PBL.github.io"
+		},
+		{
+			"path": "../nhukhoalofi.github.io"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Phucluu2809.github.io"
+	}
+}
