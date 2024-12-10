@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: 24px;
+}
+.j-logo {
+    display:inline-block;
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border-radius: 30%;
+}
+.logo_nho img {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-left: 80%;
+    text-align: center;
+    align-content: center;
+    object-fit: contain;
+}
+.chia_2_o{
+    width:100%;
+    border-collapse:collapse;//loại bỏ khoảng cách
+}
+.canle_trong_bang{
+    padding-left: 5%;
+    vertical-align: top;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+}
+button{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: black; 
+    margin: 2px;
+}
+.buttondownload{
+    color:red;
+    text-align: center;
+    align-content: center;
+}
+.setofbutton{
+    justify-content: start;
+    align-item: start;
+}

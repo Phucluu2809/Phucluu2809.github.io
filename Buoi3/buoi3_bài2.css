@@ -1,0 +1,31 @@
+.container{
+    display:flex;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+.trongtrai{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.trongphai{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.box_pink{
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+}
+.box_blue{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+.box_yellow{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
