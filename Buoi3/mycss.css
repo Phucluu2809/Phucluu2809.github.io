@@ -9,6 +9,10 @@
     width: 100%;
     margin-inline: 24px;
 }
+.navba{
+    display:flex;
+    justify-content: space-between;
+}
 .j-logo {
     display:inline-block;
     background-color: black;
@@ -20,13 +24,17 @@
     border-radius: 30%;
 }
 .logo_nho img {
-    display: inline-block;
+    display:inline-block;
     width: 100px;
     height: 30px;
     margin-left: 80%;
     text-align: center;
     align-content: center;
-    object-fit: contain;
+}
+.setofbutton{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 .chia_2_o{
     width:100%;
@@ -51,11 +59,6 @@ button{
     margin: 2px;
 }
 .buttondownload{
-    color:red;
     text-align: center;
     align-content: center;
-}
-.setofbutton{
-    justify-content: start;
-    align-item: start;
 }
