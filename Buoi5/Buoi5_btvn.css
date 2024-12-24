@@ -39,10 +39,51 @@ img {
 }
 .menu{
     display: flex;
-    width:30%;
+    width:25%;
     height:550px;
     background-color:rgb(176, 24, 24);
     flex-direction: column;
+}
+.main{
+    display: flex;
+    width: 50%;
+    height: 550px;
+    background-color: aqua;
+    flex-direction: column;
+}
+.fist{
+    margin-left: 20px;
+}
+.begin{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: rgb(52, 52, 160);
+    justify-self: center;
+    align-items: center;
+}
+.begin_end{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: rgb(120, 120, 180);
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.end_main{
+    display: flex;
+    width: 25%;
+    background-color: rgb(83, 83, 149);
+    flex-direction: column;
+    max-height: 700px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.banner{
+    width: 100%;
+    height: 400px;
+    margin: 0%;
 }
 button{
     display:flex;
