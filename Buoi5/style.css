@@ -1,0 +1,8 @@
+
+.fixed{
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    color: red;
+    border: 3px solid #73AD21;
+}

@@ -1,0 +1,48 @@
+/* tạo ra một luồng khác không ảnh hưởng đến các phần tử còn lại */
+
+
+
+/* set vị trí cố đinh không thể thay đổi */
+.fixed_class {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    
+    border: 3px solid #73AD21;
+}
+.static_class{
+    position:static;
+
+}
+.relative_class {
+    position: relative;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+/* set vị trí so với mẹ block mẹ phải có position(ngoại trừ position static )*/
+.absolute_class {                   
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+.sticky_class {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+
+.fixed{
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    background-color: red;
+}
