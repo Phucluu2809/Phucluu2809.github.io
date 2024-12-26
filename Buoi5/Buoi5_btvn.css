@@ -49,9 +49,6 @@ img {
     background-color:rgb(176, 24, 24);
     flex-direction: column;
 }
-.lienke{
-    margin:0%;
-}
 .main{
     display: flex;
     width: 50%;

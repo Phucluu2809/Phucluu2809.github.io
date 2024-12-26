@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.set1ofhover{
+    display: flex;
+    margin: 5px;
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    
+    .titleofhover{
+        position:absolute;
+        margin-top: 70%;
+        margin-left: 25%;
+        transition: all ease 0.5s;
+    }
+    img{
+        overflow: hidden;
+        transition: all ease 0.5s;
+    }
+    .paragrapofhover{
+        position:absolute;
+        margin-top: 60%;
+        margin-left: 25%;
+        opacity: 0;
+    }
+    &:hover img {
+        transform: scale(1.3);
+    }
+    &:hover  .titleofhover{
+        transform:  translateY(-25px);
+    }
+    &:hover .paragrapofhover{
+        opacity: 1;
+        transform:translateY(25px);
+    }
+}
+.set2ofhover{
+    display: flex;
+    margin: 5px;
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    .titleofhover{
+        position:absolute;
+        margin-top: 50%;
+        margin-left: 25%;
+        transition: all ease 2s;
+    }
+    img{
+        overflow: hidden;
+        transition: all ease 2s;
+    }
+    &:hover img {
+        transform: scale(1.3);
+    }
+    &:hover  .titleofhover{
+        transform:  translateY(-25px);
+    }
+
+    .paragrapofhover{
+        position:absolute;
+        margin-top: 60%;
+        margin-left: -110%;
+        background-color: white;
+        color:black;
+        transition: all ease 2s;
+    }
+    &:hover .paragrapofhover{
+        transform:translateX(337.5px);
+    }
+
+    .paragrapofhover1{
+        position:absolute;
+        margin-top: 70%;
+        margin-left: -110%;
+        background-color: white;
+        color:black;
+        transition: all ease 2s;
+    }
+    &:hover .paragrapofhover1{
+        transform:translateX(337.5px);
+    }
+
+    .paragrapofhover2{
+        position:absolute;
+        margin-top: 80%;
+        margin-left: -110%;
+        background-color: white;
+        color:black;
+        transition: all ease 2s;
+    }
+    &:hover .paragrapofhover2{
+        transform:translateX(337.5px);
+    }
+}
