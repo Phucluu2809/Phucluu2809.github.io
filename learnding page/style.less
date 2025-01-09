@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.before{
+    box-sizing:border-box;
+    margin:5px;
+}
+.logo_inline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    .fist_icon{
+        fill: #f9f9f9;
+    }
+    .second_icon{
+        fill: #a8bacb;
+        margin-right: 25px;
+    }
+    &:hover .fist_icon{
+        fill:red;
+    }
+    &:hover .second_icon{
+        fill:red;
+    }
+}

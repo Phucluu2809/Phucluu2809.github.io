@@ -1,0 +1,3 @@
+fr là chia tỉ lệ
+cú pháp 
+grid-template-columns:50px 1fr 1fr 1fr 50px;
