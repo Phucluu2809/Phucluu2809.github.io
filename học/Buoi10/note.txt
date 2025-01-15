@@ -1,0 +1,44 @@
+// function forEach(arr, callBack){
+//     for (let i = 0;i<arr.length;i++)
+//         callBack(arr[i],i,arr)
+// }
+
+// function map(arr,callBack){
+//     arrnew = [];
+//     for (let i = 0; i < arr.length; i++){
+//         arrnew.push(arr[i])
+//         callBack(arrnew[i],i,arrnew)
+//     }
+//     return arrnew
+// }
+// function find(arr,callBack){
+//     for (let i=0 ; i < arr.length ; i++){
+//         const resul = callBack(arr[i],i,arr)
+//         if (resul)    return Index;
+//     }
+//     return;
+// }
+// function includes(arr,Index){
+//     for (let i = 0 ; i < arr.length ; i++){
+//         if (arr[i] === Index) return true;
+//     }
+//     return false;
+// }
+// function reduce(arr,callBack,valuefist){
+//     if (!valuefist){
+
+//     }
+// }
+// const arr = [1,2,3,4]
+
+
+
+
+// const d = new Date()
+// setTimeout(function(){
+//  chạy sau 1s
+// },1000)
+
+// setInterval(function(){
+//     chạy mỗi 1s1s
+// },1000)
