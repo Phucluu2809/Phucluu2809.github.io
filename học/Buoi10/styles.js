@@ -1,8 +1,9 @@
 import { dataPokemon } from "./data.js";
 const pokemonList = document.querySelector(".pokemon__list");
-function out__imgs() {
+const buton__pokemon = document.querySelector("#button__load");
+function render__of__pokemon(dataPokemon,size) {
     let imgs = "";
-    for (let i = 0; i < dataPokemon.length; i++) {
+    for (let i = 0; i < size; i++) {
         const t = dataPokemon[i].name;
         imgs += `
         <div class="pokemon">
@@ -13,7 +14,7 @@ function out__imgs() {
     }
     pokemonList.innerHTML = imgs;
 }
-out__imgs();
+render__of__pokemon(dataPokemon,3);
 
 const name_inp = document.querySelector(".search")
 function check(a,b){
@@ -23,9 +24,7 @@ name_inp.addEventListener(
     "input" , function (){
         let a = name_inp.value;
         let imgs = "";
-        while (pokemonList.firstChild){
-            pokemonList.removeChild(pokemonList.firstChild);
-        }
+        pokemonList.innerHTML = '';
         for (let i = 0; i < dataPokemon.length; i++)
         {
             let b = dataPokemon[i].name;
