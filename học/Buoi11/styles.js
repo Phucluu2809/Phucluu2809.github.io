@@ -29,17 +29,15 @@ async function main() {
 
 
 
-    let size = 4;
+    let size = 20;
     function render__of__pokemon(dataPokemon,size,pokemon__element,element__id) {
         let imgs = "";
         pokemonList.innerHTML = imgs;
         for (let i = 0; i < size; i++) {
-
-
             if (!element__id[0]) 
                 element__id[i]=i;
             let element = "";
-    // khúc này tao mò khùng luôn=))) 
+            if (!pokemon__element[i]) break;
             for (let j = 0;j < pokemon__element[i].types.length; j++)
                 element+=`<div class="${pokemon__element[i].types[j].type.name}">
                               ${pokemon__element[i].types[j].type.name}
