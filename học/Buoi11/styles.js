@@ -13,15 +13,11 @@ function fetchPromise(URL) {
 
 async function main() {
     let pokemons = []; 
-    //lấy danh sách !!!
     const data = await fetchPromise("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=898");
     pokemons = data.results;
-    //tạo data tới link trong pokemos rồi kiếm hệ=)))
     const pokemonPromises = pokemons.map(pokemon => fetchPromise(pokemon.url));
 
-    // chờ tất cả các Promise hoàn thành
     const pokemon__element = await Promise.all(pokemonPromises);    
-    //  tới đây code thoi=)))
 
 
     const pokemonList = document.querySelector(".pokemon__list");
@@ -32,12 +28,16 @@ async function main() {
     let size = 20;
     function render__of__pokemon(dataPokemon,size,pokemon__element,element__id) {
         let imgs = "";
+        button__pokemon.style.display = "flex";
         pokemonList.innerHTML = imgs;
         for (let i = 0; i < size; i++) {
             if (!element__id[0]) 
                 element__id[i]=i;
             let element = "";
-            if (!pokemon__element[i]) break;
+            if (!pokemon__element[i]) {
+                button__pokemon.style.display = "none";
+                break;
+            }
             for (let j = 0;j < pokemon__element[i].types.length; j++)
                 element+=`<div class="${pokemon__element[i].types[j].type.name}">
                               ${pokemon__element[i].types[j].type.name}
@@ -52,6 +52,9 @@ async function main() {
                 <div class="name">${dataPokemon[i].name}</div>
             </div>`
         }
+        if (!pokemon__element[size]) {
+                button__pokemon.style.display = "none";
+            }
         pokemonList.innerHTML = imgs;
     }
     let element__id = [];
@@ -90,14 +93,6 @@ async function main() {
         })
     })
 
-
-
-    button__pokemon.addEventListener('click',function(){
-        if (size < element__tmp.length)
-            size = size + 5;
-        else size = element__tmp.length;
-        render__of__pokemon(tmp,size,element__tmp,element__id);
-    })
 }
 
 main(); 
