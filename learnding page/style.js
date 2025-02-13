@@ -185,18 +185,31 @@ const btn2 = document.getElementById('forge___');
 const btn3 = document.getElementById('es___');
 const btn4 = document.getElementById('en___');
 const btn5 = document.getElementById('b___');
-function tap_to_menu(call_back) {
+
+const btn_1 = document.getElementById('game_btn');
+const btn_2 = document.getElementById('forge_btn');
+const btn_3 = document.getElementById('es_btn');
+const btn_4 = document.getElementById('en_btn');
+const btn_5 = document.getElementById('b_btn');
+function tap_to_menu(call_back , call_back_btn) {
     if (call_back.style.display === 'none') {     
         call_back.style.display = 'block';
+        call_back_btn.style.backgroundColor = 'black';
+        call_back_btn.style.color = 'white';
+
     }
-    else  call_back.style.display = 'none';
+    else  {call_back.style.display = 'none';
+        call_back_btn.style.backgroundColor = '';
+        call_back_btn.style.color = '';
+
+    }
 }
 if (window.innerWidth < 1024){
-    document.getElementById('game_btn').addEventListener("click", () => tap_to_menu(btn1));
-    document.getElementById('forge_btn').addEventListener("click", () => tap_to_menu(btn2));
-    document.getElementById('es_btn').addEventListener("click", () => tap_to_menu(btn3));
-    document.getElementById('en_btn').addEventListener("click", () => tap_to_menu(btn4));
-    document.getElementById('b_btn').addEventListener("click", () => tap_to_menu(btn5));
+    document.getElementById('game_btn').addEventListener("click", () => tap_to_menu(btn1 , btn_1));
+    document.getElementById('forge_btn').addEventListener("click", () => tap_to_menu(btn2 , btn_2));
+    document.getElementById('es_btn').addEventListener("click", () => tap_to_menu(btn3 , btn_3));
+    document.getElementById('en_btn').addEventListener("click", () => tap_to_menu(btn4 , btn_4));
+    document.getElementById('b_btn').addEventListener("click", () => tap_to_menu(btn5 , btn_5));
 }
 
 const categories = document.querySelectorAll(".category");
@@ -214,4 +227,3 @@ categories.forEach((box) => {
     box.classList.add("no-hover");
   });
 });
-
