@@ -85,12 +85,12 @@ async function main() {
             }
         }
         render__of__pokemon(tmp,size,element__tmp,element__id);
-        button__pokemon.addEventListener('click',function(){
-            if (size < element__tmp.length)
-                size = size + 5;
-            else size = element__tmp.length;
-            render__of__pokemon(tmp,size,element__tmp,element__id);
-        })
+    })
+    button__pokemon.addEventListener('click',function(){
+        if (size < element__tmp.length)
+            size = size + 5;
+        else size = element__tmp.length;
+        render__of__pokemon(tmp,size,element__tmp,element__id);
     })
 
 }
