@@ -29,7 +29,7 @@ async function main() {
     function render__of__pokemon(dataPokemon,size,pokemon__element,element__id) {
         let imgs = "";
         button__pokemon.style.display = "flex";
-        pokemonList.innerHTML = imgs;
+        pokemonList.innerHTML =  `<img class="pokemon" src="loading.gif" alt="">`;
         for (let i = 0; i < size; i++) {
             if (!element__id[0]) 
                 element__id[i]=i;
